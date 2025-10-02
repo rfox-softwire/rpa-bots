@@ -1,0 +1,44 @@
+[
+    {
+        "policyNumber": "POL-782831",
+        "claimDescription": "Claim details",
+        "claimAmount": "10000",
+        "claimDate": "01/10/2025"
+    },
+    {
+        "policyNumber": "POL-783283",
+        "claimDescription": "Claim details",
+        "claimAmount": "100",
+        "claimDate": "01/10/2025"
+    },
+    {
+        "policyNumber": "POL-432861",
+        "claimDescription": "Claim details",
+        "claimAmount": "100000000",
+        "claimDate": "01/10/2025"
+    },
+    {
+        "policyNumber": "POL-412178",
+        "claimDescription": "Claim details",
+        "claimAmount": "100",
+        "claimDate": "01/10/2025"
+    },
+    {
+        "policyNumber": "POL-49986a",
+        "claimDescription": "Claim details",
+        "claimAmount": "1",
+        "claimDate": "01/10/2025"
+    },
+    {
+        "policyNumber": "POL-733306",
+        "claimDescription": "Claim details",
+        "claimAmount": "10000",
+        "claimDate": "01/10/2025"
+    },
+    {
+        "policyNumber": "POL-447257",
+        "claimDescription": "Claim details",
+        "claimAmount": "100",
+        "claimDate": "01/10/2026"
+    }
+]
