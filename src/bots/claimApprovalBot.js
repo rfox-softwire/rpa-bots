@@ -6,14 +6,12 @@ async function approveClaims() {
     const page = await context.newPage();
 
     try {
-        console.log('Navigating to claims page...');
         await page.goto('http://localhost:3003/');
         
         await page.waitForSelector('table.min-w-full tbody tr');
         
         const claimRows = await page.$$('table.min-w-full tbody tr[data-claim-id]');
-        console.log(`Found ${claimRows.length} claims to process`);
-        
+
         for (const row of claimRows) {
             const status = await row.$eval('.status-badge', el => el.textContent.trim());
             
@@ -22,8 +20,6 @@ async function approveClaims() {
                 const policyNumber = await row.$eval('td:nth-child(1)', el => el.textContent.trim());
                 const claimAmount = parseFloat(await row.$eval('td:nth-child(3)', 
                     el => el.textContent.trim().replace(/[^0-9.-]+/g, '')));
-                
-                console.log(`\nProcessing claim ${claimId} for policy ${policyNumber} (Amount: £${claimAmount})`);
                 
                 const policyPage = await context.newPage();
                 await policyPage.goto('http://localhost:3002/');
@@ -38,28 +34,20 @@ async function approveClaims() {
 
                 await policyPage.close();
 
-                await row.click('a.view-claim');
-                await page.waitForTimeout(500);
+                await row.$eval('a.view-claim', el => el.click());
                 
                 if (remainingLimit >= claimAmount) {
                     await page.click('button#acceptClaimBtn');
                 } else {
                     await page.click('button#rejectClaimBtn');
                 }
-                await page.waitForTimeout(1000);
-                console.log(`Claim ${claimId} processed`)
             }
-        }
-        
-        console.log('\nAll claims processed!');
-        
+        }        
     } catch (error) {
         console.error('An error occurred:', error);
     } finally {
-        // Close the browser
         await browser.close();
     }
 }
 
-// Run the function
 approveClaims().catch(console.error);
