@@ -1,9 +1,17 @@
 const fs = require('fs');
 const path = require('path');
+const csv = require('csv-parser');
 
-function generatePolicyNumber() {
-    const randomNum = Math.floor(100000 + Math.random() * 900000);
-    return `POL-${randomNum}`;
+// Read policy IDs from CSV
+function readPolicyIds() {
+    const policyIds = [];
+    return new Promise((resolve, reject) => {
+        fs.createReadStream(path.join(__dirname, 'policies.csv'))
+            .pipe(csv())
+            .on('data', (row) => policyIds.push(row.policy_id))
+            .on('end', () => resolve(policyIds))
+            .on('error', reject);
+    });
 }
 
 const claimDescriptions = [
@@ -34,21 +42,35 @@ function formatDate(date) {
     return `${day}/${month}/${year}`;
 }
 
-const claims = [];
-for (let i = 0; i < 20; i++) {
-    const randomDaysAgo = Math.floor(Math.random() * 730);
-    const claimDate = new Date();
-    claimDate.setDate(claimDate.getDate() - randomDaysAgo);
+async function generateClaims() {
+    try {
+        const policyIds = await readPolicyIds();
+        
+        const claims = [];
+        for (let i = 0; i < 20; i++) {
+            const randomDaysAgo = Math.floor(Math.random() * 730);
+            const claimDate = new Date();
+            claimDate.setDate(claimDate.getDate() - randomDaysAgo);
 
-    claims.push({
-        policyNumber: generatePolicyNumber(),
-        claimDescription: getRandomDescription(),
-        claimAmount: getRandomAmount(1000, 100000).toString(),
-        claimDate: formatDate(claimDate)
-    });
+            const randomPolicyIndex = Math.floor(Math.random() * policyIds.length);
+            const policyNumber = policyIds[randomPolicyIndex];
+
+            claims.push({
+                policyNumber: policyNumber,
+                claimDescription: getRandomDescription(),
+                claimAmount: getRandomAmount(1000, 100000).toString(),
+                claimDate: formatDate(claimDate)
+            });
+        }
+
+        const filePath = path.join(__dirname, 'claimData.json');
+        fs.writeFileSync(filePath, JSON.stringify(claims, null, 4));
+        
+        console.log('Successfully generated 20 random claims in claimData.json');
+    } catch (error) {
+        console.error('Error generating claims:', error);
+    }
 }
 
-const filePath = path.join(__dirname, 'claimData.json');
-fs.writeFileSync(filePath, JSON.stringify(claims, null, 4));
-
-console.log('Successfully generated 20 random claims in claimData.json');
+// Run the generation process
+generateClaims();

@@ -1,122 +1,122 @@
 [
     {
-        "policyNumber": "POL-607568",
-        "claimDescription": "Fire damage claim",
-        "claimAmount": "79056",
-        "claimDate": "01/11/2023"
-    },
-    {
-        "policyNumber": "POL-150222",
-        "claimDescription": "Theft of personal belongings",
-        "claimAmount": "7753",
-        "claimDate": "11/03/2025"
-    },
-    {
-        "policyNumber": "POL-387128",
-        "claimDescription": "Natural disaster damage",
-        "claimAmount": "65564",
-        "claimDate": "30/06/2025"
-    },
-    {
-        "policyNumber": "POL-338242",
-        "claimDescription": "Natural disaster damage",
-        "claimAmount": "82224",
-        "claimDate": "12/04/2025"
-    },
-    {
-        "policyNumber": "POL-752150",
-        "claimDescription": "Property damage from storm",
-        "claimAmount": "73300",
-        "claimDate": "14/11/2023"
-    },
-    {
-        "policyNumber": "POL-308953",
-        "claimDescription": "Natural disaster damage",
-        "claimAmount": "84680",
-        "claimDate": "05/04/2025"
-    },
-    {
-        "policyNumber": "POL-334351",
-        "claimDescription": "Liability claim",
-        "claimAmount": "3892",
-        "claimDate": "12/09/2024"
-    },
-    {
-        "policyNumber": "POL-351113",
-        "claimDescription": "Vehicle collision damage",
-        "claimAmount": "15035",
-        "claimDate": "13/03/2025"
-    },
-    {
-        "policyNumber": "POL-662391",
-        "claimDescription": "Fire damage claim",
-        "claimAmount": "65249",
-        "claimDate": "24/04/2025"
-    },
-    {
-        "policyNumber": "POL-950978",
-        "claimDescription": "Electronic equipment damage",
-        "claimAmount": "84822",
-        "claimDate": "26/06/2024"
-    },
-    {
-        "policyNumber": "POL-444114",
-        "claimDescription": "Travel insurance claim",
-        "claimAmount": "37460",
-        "claimDate": "19/09/2025"
-    },
-    {
-        "policyNumber": "POL-996021",
-        "claimDescription": "Fire damage claim",
-        "claimAmount": "23177",
-        "claimDate": "12/06/2025"
-    },
-    {
-        "policyNumber": "POL-357937",
-        "claimDescription": "Vehicle collision damage",
-        "claimAmount": "14193",
-        "claimDate": "03/11/2023"
-    },
-    {
-        "policyNumber": "POL-389033",
-        "claimDescription": "Natural disaster damage",
-        "claimAmount": "26295",
-        "claimDate": "27/07/2024"
-    },
-    {
-        "policyNumber": "POL-183780",
-        "claimDescription": "Natural disaster damage",
-        "claimAmount": "53438",
-        "claimDate": "18/07/2025"
-    },
-    {
-        "policyNumber": "POL-610775",
-        "claimDescription": "Vehicle collision damage",
-        "claimAmount": "57456",
-        "claimDate": "06/01/2025"
-    },
-    {
-        "policyNumber": "POL-247872",
-        "claimDescription": "Water damage to property",
-        "claimAmount": "22045",
-        "claimDate": "07/09/2025"
-    },
-    {
-        "policyNumber": "POL-510999",
-        "claimDescription": "Natural disaster damage",
-        "claimAmount": "65452",
-        "claimDate": "17/01/2025"
-    },
-    {
-        "policyNumber": "POL-194308",
-        "claimDescription": "Theft of personal belongings",
-        "claimAmount": "10805",
-        "claimDate": "20/05/2024"
-    },
-    {
-        "policyNumber": "POL-834524",
+        "policyNumber": "POL-880935",
         "claimDescription": "Medical expenses coverage",
-        "claimAmount": "33883",
-        "claimDate": "04/10/2024"
+        "claimAmount": "93618",
+        "claimDate": "26/08/2025"
+    },
+    {
+        "policyNumber": "POL-567541",
+        "claimDescription": "Electronic equipment damage",
+        "claimAmount": "81888",
+        "claimDate": "09/09/2025"
+    },
+    {
+        "policyNumber": "POL-528591",
+        "claimDescription": "Fire damage claim",
+        "claimAmount": "33906",
+        "claimDate": "11/04/2024"
+    },
+    {
+        "policyNumber": "POL-465882",
+        "claimDescription": "Liability claim",
+        "claimAmount": "61097",
+        "claimDate": "05/08/2024"
+    },
+    {
+        "policyNumber": "POL-703271",
+        "claimDescription": "Vehicle collision damage",
+        "claimAmount": "17778",
+        "claimDate": "23/03/2025"
+    },
+    {
+        "policyNumber": "POL-368291",
+        "claimDescription": "Natural disaster damage",
+        "claimAmount": "76974",
+        "claimDate": "21/06/2024"
+    },
+    {
+        "policyNumber": "POL-371644",
+        "claimDescription": "Liability claim",
+        "claimAmount": "26453",
+        "claimDate": "11/02/2025"
+    },
+    {
+        "policyNumber": "POL-853452",
+        "claimDescription": "Water damage to property",
+        "claimAmount": "89235",
+        "claimDate": "23/01/2024"
+    },
+    {
+        "policyNumber": "POL-579440",
+        "claimDescription": "Water damage to property",
+        "claimAmount": "55754",
+        "claimDate": "20/05/2025"
+    },
+    {
+        "policyNumber": "POL-579159",
+        "claimDescription": "Electronic equipment damage",
+        "claimAmount": "14496",
+        "claimDate": "26/10/2024"
+    },
+    {
+        "policyNumber": "POL-262015",
+        "claimDescription": "Medical expenses coverage",
+        "claimAmount": "65162",
+        "claimDate": "11/06/2024"
+    },
+    {
+        "policyNumber": "POL-769269",
+        "claimDescription": "Medical expenses coverage",
+        "claimAmount": "90097",
+        "claimDate": "10/05/2025"
+    },
+    {
+        "policyNumber": "POL-579159",
+        "claimDescription": "Property damage from storm",
+        "claimAmount": "87320",
+        "claimDate": "02/05/2025"
+    },
+    {
+        "policyNumber": "POL-703271",
+        "claimDescription": "Fire damage claim",
+        "claimAmount": "78731",
+        "claimDate": "18/02/2025"
+    },
+    {
+        "policyNumber": "POL-368291",
+        "claimDescription": "Medical expenses coverage",
+        "claimAmount": "42624",
+        "claimDate": "28/10/2024"
+    },
+    {
+        "policyNumber": "POL-609243",
+        "claimDescription": "Vehicle collision damage",
+        "claimAmount": "70468",
+        "claimDate": "17/05/2025"
+    },
+    {
+        "policyNumber": "POL-371644",
+        "claimDescription": "Water damage to property",
+        "claimAmount": "25981",
+        "claimDate": "08/10/2024"
+    },
+    {
+        "policyNumber": "POL-286361",
+        "claimDescription": "Medical expenses coverage",
+        "claimAmount": "9612",
+        "claimDate": "23/08/2024"
+    },
+    {
+        "policyNumber": "POL-465882",
+        "claimDescription": "Electronic equipment damage",
+        "claimAmount": "78104",
+        "claimDate": "13/09/2024"
+    },
+    {
+        "policyNumber": "POL-134021",
+        "claimDescription": "Liability claim",
+        "claimAmount": "71664",
+        "claimDate": "10/02/2025"
     }
 ]
